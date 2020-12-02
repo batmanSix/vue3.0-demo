@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="container">
-      <h1>欢迎使用 Feng 待办事项！</h1>
+      <h1>欢迎使用 mini kang 待办事项！</h1>
       <todo-add :tid="todos.length" @add-todo="addTodo" />
       <todo-filter :selected="filter" @change-filter="filter = $event" />
       <todo-list :todos="filteredTodos" />
