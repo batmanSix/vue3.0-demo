@@ -2,7 +2,6 @@ import { computed, ref } from "vue";
 
 export default function useFilteredTodos(todos) {
   const filter = ref("all");
-  console.log(filter)
   // 过滤 todo
   const filteredTodos = computed(() => {
     switch (filter.value) {
