@@ -1,4 +1,5 @@
 .DS_Store
+.eslintrc.js
 node_modules/
 unpackage/
 dist/
@@ -21,3 +22,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+
