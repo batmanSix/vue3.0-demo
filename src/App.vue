@@ -6,6 +6,9 @@
       <todo-filter :selected="filter" @change-filter="filter = $event" />
       <todo-list :todos="filteredTodos" />
     </div>
+    <div class="left-box">
+      <index-page></index-page>
+    </div>
   </main>
 </template>
 
@@ -15,6 +18,7 @@ import TodoFilter from "./components/TodoFilter.vue";
 import TodoList from "./components/TodoList.vue";
 import useTodos from "@/composables/useTodos.js";
 import useFilteredTodos from "@/composables/useFilteredTodos.js";
+import IndexPage from "./components/IndexPage"
 
 export default {
   name: "App",
@@ -22,6 +26,7 @@ export default {
     TodoAdd,
     TodoFilter,
     TodoList,
+    IndexPage
   },
   setup() {
     const {todos, addTodo} = useTodos();
@@ -70,5 +75,10 @@ h1 {
   margin: 24px 0;
   font-size: 28px;
   color: #414873;
+}
+.left-box{
+  position: relative;
+  left: 0;
+  margin-top: 20px;
 }
 </style>
